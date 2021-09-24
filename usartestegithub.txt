@@ -1,0 +1,111 @@
+//Arrays
+//Servem para agrupar diferentes tipos de dados
+
+var produtos = [
+    "notebook",
+    "celular",
+    "TV"
+]; //array de string
+
+var notas_alunos = [9, 5, 7, 8]; //array de numbers
+
+Importancia do Array -> É util para agrupar dados dentro de uma única variável. 
+
+Adicionando elementos no array: 
+- Os arrays facilitam adicionar novos elementos aos dados de um mesmo domínio.
+
+O que são coleções?
+- Coleções são dados de um mesmo domínio agrupados em uma variável. O array é um exemplo de coleções de dados.
+-> Arrays são coleções de dados.
+-> O array é um tipo de dado muito importante, pois serve para reunir dados de um mesmo contexto dentro de uma variável. 
+
+Acessando elementos de array
+- como vimos, o array é utilizado para agrupar elementos dentro de uma variável. E para acessar cada elemento é necessário utilizar um índice, que funciona como uma posição numérica dentro do array.
+
+Acessando elementos:
+->  var funcionarios = [
+    "danilo", //indice 0
+    "denise", //indice 1
+    "marcos", //indice 2
+    "roberta", //indice 3
+    "thiago" //indice 4
+]; 
+ 
+console.log(funcionarios[3]); //para acessar (aparece roberta)
+
+Indices inexistentes no array:
+-> Problema que ocorre quando acessamos indices que nao existem no array
+-> indice do ultimo elemento = tamanho do array -1
+-> Para acessar o ultimo elemento de um array é necessário obter o tamanho do array e subtrair uma unidade.
+
+var notas_bimestre = [
+    7, 6, 8, 5
+]; 
+
+var total_notas = 4;
+var soma_notas = notas_bimestre[0] + notas_bimestre[1] + notas_bimestre[2] + notas_bimestre[3];
+var media_aluno = soma_notas / total_notas;
+console.log("Média do aluno: " + media_aluno);
+
+Alterando elementos de Array
+-> 1º precisamos dos indices dos elementos que devem ser mudados
+
+var disciplinas = [
+    "portugues",
+    "matematica",
+    "historia",
+    "geografia",
+    "quimica",
+    "fisica",
+    "ingles"
+]; 
+disciplinas[6] = "frances"; //trocou o ingles pelo frances
+console.log(disciplinas); 
+
+Trocando um elemento de um array por um elemento de outro array:
+
+var funcionarios = [
+    "barbara", 
+    "carlos", 
+    "helena", 
+    "maria",
+    "rogerio" 
+]; 
+console.log(funcionarios);
+//['barbara', 'carlos', 'helena', 'maria', 'rogerio']
+
+var novos_funcionarios = [
+    "guilherme",
+    "jessica"
+]; 
+funcionarios[0] = novos_funcionarios[1]; 
+funcionarios[4] = novos_funcionarios[0]; 
+console.log(funcionarios); 
+// ['jessica', 'carlos', 'helena', 'maria', 'guilherme']; 
+
+Obtendo tamanho de array:
+-> Length: propriedade responsavel por informar o tamanho do array. Com ela podemos retornar o total de elementros que um array tem. 
+
+var signos = [
+    "Aries",
+    "Touro",
+    "Gemeos",
+    "Cancer",
+    "Leao",
+    "Virgem",
+    "Libra",
+    "Escorpiao",
+    "Sagitario",
+    "Capricornio",
+    "Aquario",
+    "Peixes"
+]; 
+console.log(signos.length); 
+
+Propriedade length: 
+-> é uma propriedade que nos informa o tamanho de um array, o que evita termos de informar esse tamanho manualmente.
+-> independentemente do tamanho do array, com length podemos retornar o total de elementos. 
+
+Date() -> é usado para trabalhar com datas no javascript
+
+//Linha nova para aparecer no github
